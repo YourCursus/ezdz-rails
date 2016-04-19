@@ -6,7 +6,7 @@ LIBRARY_NEW_VERSION=`cat lib/**/*.rb | grep VERSION | awk '{ print $3 }' | tr -d
 LIBRARY_UPDATED=`git status --porcelain | grep -v "lib/ezdz-rails/version.rb"`
 if [[ -n "$LIBRARY_UPDATED" ]]; then
   echo "Your repository is not clean !"
-  # exit 1
+  exit 1
 fi
 
 echo "Ensuring Docker image $DOCKER_IMAGE_NAME exists ..."

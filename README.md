@@ -1,6 +1,6 @@
 # Ezdz-Rails
 
-This Gem integrates [Jay Salvat's Ezdz](https://github.com/seiyria/bootstrap-slider)
+This Gem integrates [Jay Salvat's Ezdz](https://github.com/jaysalvat/ezdz)
 to the Rails assets pipeline.
 
 ## Installation
